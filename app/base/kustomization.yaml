@@ -4,3 +4,9 @@ namespace: nginx-flux
 resources:
   - namespace.yaml
   - helmrelease.yaml
+configMapGenerator:
+  - name: nginx-values
+    files:
+      - values.yaml=my-values.yaml
+configurations:
+  - kustomizeconfig.yaml
