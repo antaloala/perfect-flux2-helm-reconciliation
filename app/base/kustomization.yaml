@@ -2,11 +2,11 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: nginx-flux
 resources:
-  - namespace.yaml
-  - helmrelease.yaml
+- namespace.yaml
+- helmrelease.yaml
 configMapGenerator:
-  - name: nginx-values
-    files:
-      - values.yaml=my-values.yaml
+- name: nginx-values
+  files:
+  - values.yaml=my-values.yaml
 configurations:
-  - kustomizeconfig.yaml
+- kustomizeconfig.yaml
