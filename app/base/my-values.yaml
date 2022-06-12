@@ -1,2 +1,4 @@
 service:
   type: NodePort
+  
+minReadySeconds: 0
