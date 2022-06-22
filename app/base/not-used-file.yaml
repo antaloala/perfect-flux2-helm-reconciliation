@@ -1,0 +1,8 @@
+# This file is not referenced from the k8s kustomization.yaml file in this git repo path
+# It is added only to be able to apply changes and related git commits that do not
+# change the HelmRelease object's spec and so do not trigger any HelmRelease reconciliation
+# (so not new revisions of the Helm release are created by flux2 helm-controller)
+#
+# Add whatever you want here below (for git to detect differences with previoys version)
+#
+This is the first added message !
