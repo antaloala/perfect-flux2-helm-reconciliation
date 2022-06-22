@@ -8,5 +8,6 @@ configMapGenerator:
 - name: nginx-values
   files:
   - values.yaml=my-values.yaml
+  - otherinfo.yaml=discard.yaml
 configurations:
 - kustomizeconfig.yaml
