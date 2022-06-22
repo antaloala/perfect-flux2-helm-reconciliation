@@ -12,7 +12,10 @@ spec:
         name: bitnami
         namespace: flux-system
       version: "9.1.11"
-  interval: 1h0m0s
+  # HelmRelease interval set to 5 minutes (so if the Helm release is manually deleted (using "helm uninstall")
+  # it should be recreated not longer than 5 minutes later ... without the need for any git commit in the
+  # run-time git repo.
+  interval: 5m0s
   install:
     remediation:
       retries: 3
