@@ -1,2 +1,2 @@
 # Modify this to get a new ConfigMap object from kustomize's configMapGenerator
-gargabe-info: 5678
+gargabe-info: 1122
